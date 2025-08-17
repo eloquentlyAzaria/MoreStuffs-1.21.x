@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "morestuffs",
+	"version": "${version}",
+	"name": "MoreStuffs",
+	"description": "This is a mod that adds a bunch of new (random) stuff!",
+	"authors": [
+		"eloquentlyAzaria"
+	],
+	"contact": {
+		"homepage": "None right now",
+		"sources": "https://github.com/eloquentlyAzaria/MoreStuffs"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/morestuffs/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.az.morestuffs.MoreStuffs"
+		],
+		"fabric-datagen": [
+			"com.az.morestuffs.MoreStuffsDataGenerator"
+		],
+      "client": [
+        "com.az.morestuffs.MoreStuffsClient"
+      ]
+	},
+	"mixins": [
+		"morestuffs.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
